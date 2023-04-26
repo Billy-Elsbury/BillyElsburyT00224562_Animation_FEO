@@ -1,8 +1,8 @@
 # XGen Palette File
 #
 # Version:  C:/Program Files/Autodesk/Maya2023/plug-ins/xgen/
-# Author:   billy
-# Date:     Wed Apr 26 02:46:07 2023
+# Author:   T00224562
+# Date:     Wed Apr 26 11:04:13 2023
 
 FileVersion 18
 
@@ -10,7 +10,7 @@ Palette
 	name			collection
 	parent			
 	xgDataPath		${PROJECT}xgen/collections/collection
-	xgProjectPath		C:/Users/billy/Desktop/BillyElsburyT00224562_Animation_FEO/Werewolf_Project/
+	xgProjectPath		C:/Users/T00224562/Desktop/BillyElsburyT00224562_Animation_FEO/Werewolf_Project/
 	xgDogTag		
 	endAttrs
 
@@ -29,7 +29,7 @@ Description
 	groom			groom_description1
 	descriptionId		0
 	xgDataPath		${PROJECT}xgen/collections/collection/
-	xgProjectPath		C:/Users/billy/Desktop/BillyElsburyT00224562_Animation_FEO/Werewolf_Project/
+	xgProjectPath		C:/Users/T00224562/Desktop/BillyElsburyT00224562_Animation_FEO/Werewolf_Project/
 	endAttrs
 
 RendermanRenderer
