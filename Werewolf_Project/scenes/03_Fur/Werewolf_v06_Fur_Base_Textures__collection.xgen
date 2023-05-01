@@ -1,0 +1,217 @@
+# XGen Palette File
+#
+# Version:  C:/Program Files/Autodesk/Maya2023/plug-ins/xgen/
+# Author:   T00224562
+# Date:     Thu Apr 27 15:24:34 2023
+
+FileVersion 18
+
+Palette
+	name			collection
+	parent			
+	xgDataPath		${PROJECT}xgen/collections/collection
+	xgProjectPath		C:/Users/T00224562/Desktop/BillyElsburyT00224562_Animation_FEO/Werewolf_Project/
+	xgDogTag		
+	endAttrs
+
+Description
+	name			description1
+	flipNormals		false
+	strayPercentage		0.0
+	lodFlag			false
+	averageWidth		1.0
+	pixelCullSize		0.0
+	pixelFadeSize		20.0
+	cullFade		0.1
+	minDensity		0.01
+	cullWidthRatio		0.01
+	maxWidthRatio		20.0
+	groom			groom_description1
+	descriptionId		0
+	xgDataPath		${PROJECT}xgen/collections/collection/
+	xgProjectPath		C:/Users/T00224562/Desktop/BillyElsburyT00224562_Animation_FEO/Werewolf_Project/
+	endAttrs
+
+RendermanRenderer
+	percent			100.0
+	startPercent		0.0
+	inCameraOnly		false
+	inCameraMargin		0.0
+	length_XP		true
+	width_XP		true
+	T_XP			false
+	stray_XP		false
+	id_XP			false
+	descid_XP		false
+	ri_XP			true
+	rf_XP			true
+	u_XS			true
+	v_XS			true
+	faceid_XS		true
+	geomid_XS		false
+	geomName_XS		true
+	P_XS			true
+	Pref_XS			false
+	Pg_XS			false
+	Prefg_XS		false
+	N_XS			true
+	Ng_XS			false
+	Nref_XS			false
+	Nrefg_XS		false
+	dPdu_XS			true
+	dPduref_XS		false
+	dPdug_XS		false
+	dPdurefg_XS		false
+	dPdv_XS			true
+	dPdvref_XS		false
+	dPdvg_XS		false
+	dPdvrefg_XS		false
+	renderer		None
+	renderMethod		2
+	draMode			0
+	primitiveBound		1.0
+	custom__arnold_rendermode	0
+	custom__arnold_curveMode	0
+	custom__arnold_minPixelWidth	0.0
+	custom__arnold_motion_blur	0
+	custom__arnold_motion_blur_mode	1
+	custom__arnold_motion_blur_steps	2
+	custom__arnold_motion_blur_factor	0.5
+	custom__arnold_useAuxRenderPatch	0
+	custom__arnold_auxRenderPatch	0
+	custom__arnold_multithreading	0
+	endAttrs
+
+SplinePrimitive
+	_patchNames		
+	length			map('${DESC}/groom/length/')
+	width			map('${DESC}/groom/width/')
+	depth			$a=1.0;#0.05,5.0\n$a
+	offU			map('${DESC}/groom/orient/',0)
+	offV			map('${DESC}/groom/orient/',1)
+	offN			$a=0.0000;#-180.0,180.0\n$a
+	aboutN			$a=0.0000;#-180.0,180.0\n$a
+	regionMap		${DESC}/groom/region/
+	regionMask		0.0
+	iMethod			0
+	useCache		false
+	liveMode		true
+	_wireNames		
+	cacheFileName		${DESC}/guides.abc
+	attrCVCount		3
+	bendParam[0]		map('${DESC}/groom/bend/',0)
+	bendU[0]		map('${DESC}/groom/bend/',1)
+	bendV[0]		map('${DESC}/groom/bend/',2)
+	fxCVCount		5
+	uniformCVs		true
+	taper			$a=0.0000;#-1.0,1.0\n$a
+	taperStart		$a=0.0000;#0.0,1.0\n$a
+	displayWidth		true
+	faceCamera		true
+	tubeShade		true
+	tubes			
+	guideSpacing		1.0
+	guideMask		1.0
+	cutParam		1.0
+	texelsPerUnit		10.0
+	CVFrequency		1.0
+	widthRamp		rampUI(0.0,1.0,1:1.0,1.0,1)
+	endAttrs
+
+ClumpingFXModule
+	active			true
+	mask			1.0
+	name			Clumping1
+	cvAttr			false
+	mapInitialized		True
+	pointDir		${DESC}/${FXMODULE}/Points/
+	mapDir			${DESC}/${FXMODULE}/Maps/
+	clump			1.0
+	clumpScale		rampUI(0.0,0.5,3:0.38924050632911394,0.6842105263157895,1:0.7183544303797469,0.618421052631579,1:0.9683544303797469,0.2894736842105263,1)
+	clumpVolumize		false
+	clumpVariance		0.0
+	cut			0.0
+	copy			0.0
+	copyScale		rampUI(0.0,0.0,3)
+	copyVariance		0.0
+	curl			0.0
+	curlScale		rampUI(0.0,0.5,3)
+	offset			0.0
+	offsetScale		rampUI(0.0,0.0,3:0.5,1.0,3:1.0,0.0,3)
+	flatness		0.0
+	flatnessScale		rampUI(0.0,0.0,3)
+	frame			0.0
+	noise			0.0
+	noiseScale		rampUI(0.0,0.0,3)
+	noiseFrequency		0.0
+	noiseCorrelation	0.0
+	exportCurves		false
+	exportDir		curves/
+	exportFaces		
+	texelsPerUnit		10.0
+	radiusVariance		0.5
+	ptDensity		26.57
+	ptMask			1.0
+	ptLength		1.0
+	colorPreview		false
+	useControlMaps		0
+	controlMask		0.0
+	controlMapDir		${DESC}/groom/region/
+	endAttrs
+
+RandomGenerator
+	displacement		$a=0.0000;#-1.0,1.0\n$a
+	vectorDisplacement	0
+	bump			$a=0.0000;#-1.0,1.0\n$a
+	offset			$a=0.0000;#-1.0,1.0\n$a
+	cullFlag		false
+	cullBackface		false
+	cullFrustrum		false
+	cullAngleBF		0.0
+	cullAngleF		0.0
+	cullExpr		$a=0.0000;#0.0,1.0\n$a
+	density			500.0
+	mask			1.0 # map('${DESC}/density/')
+	dcFlag			false
+	scFlag			true
+	usePoints		false
+	pointDir		${DESC}/Points/
+	ptLength		1.0
+	endAttrs
+
+GLRenderer
+	percent			100.0
+	startPercent		0.0
+	inCameraOnly		true
+	inCameraMargin		0.0
+	patchNames		false
+	faceIds			false
+	primIDs			false
+	primIDsAt		1.0
+	vertices		false
+	poly			false
+	culled			false
+	unitCube		false
+	color			map('${DESC}/groom/region/')
+	guideColor		$a=[1.0,0.4313725,0.0];#color\n$a
+	TEXCOORD3		[ $cWidth, 0, 0 ]  # red channel reserved by XGen
+	TEXCOORD4		
+	TEXCOORD5		
+	TEXCOORD6		
+	TEXCOORD7		
+	splineSegments		2
+	primNumLimit		100000000
+	endAttrs
+
+	Active	SplinePrimitive
+	Active	RandomGenerator
+	Active	RendermanRenderer
+	Preview	GLRenderer
+
+Patches	description1	0
+Patch	Subd
+	name		WereWolf
+	faceIds		320	 552 553 554 555 556 557 558 559 565 566 567 569 573 574 575 577 578 579 583 584 585 591 608 617 618 619 622 631 632 633 636 646 738 757 764 765 766 788 839 878 884 885 886 887 888 889 890 908 917 918 919 920 921 1011 1012 1013 1014 1015 1018 1019 1034 1035 1036 1037 1038 1039 1040 1041 1042 1043 1044 1045 1046 1047 1048 1054 1055 1056 1058 1062 1063 1064 1066 1067 1068 1070 1073 1074 1075 1081 1082 1083 1084 1085 1086 1087 1088 1105 1114 1115 1116 1132 1133 1134 1135 1136 1139 1241 1260 1268 1269 1270 1292 1343 1382 1388 1389 1390 1391 1392 1393 1394 1412 1421 1422 1423 1424 1425 1516 1517 1518 1519 1520 1523 1524 1533 1534 1535 1536 1537 1538 1539 1580 1581 1582 1583 1604 1605 1638 1639 1640 1641 3095 3096 3097 3098 3099 3100 3101 3102 3103 3104 3105 3106 3107 3108 3109 3110 3111 3112 3113 3114 3115 3116 3117 3118 3119 3120 3121 3122 3123 3124 3125 3126 3313 3319 3325 3344 3346 3348 3350 3351 3352 3353 3354 3368 3370 3371 3372 3373 3538 3548 3560 3584 3819 3820 3821 3822 3824 3825 3826 3839 3852 3888 3889 3890 3891 3892 3893 3894 3895 3896 3897 3898 3899 3900 3901 3902 3903 3904 3905 3906 3907 3908 3909 3910 3911 3912 3913 3914 3915 3916 3917 3918 3919 4106 4112 4118 4137 4139 4141 4143 4144 4145 4146 4147 4161 4163 4164 4165 4330 4340 4375 4610 4611 4612 4613 4615 4616 4617 4630 4643 4909 4910 4911 4912 4913 4914 4915 4916 4917 4918 4919 4920 4921 4922 4923 4924 4925 4926 4927 4928 4929 4930 4931 4932 4933 4934 4935 4936 4937 4938 4939 4940 4941 4942 4943 4944 4945 4946 4947 4948 4949 4950 4951 4952 4953 4954 4955 4956
+	animCurves	0	
+endObject
+endPatches
